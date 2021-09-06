@@ -12,6 +12,6 @@ for porta in portas:
     #coloca tempo em ver se a porta vai estar aberta
     client.settimeout(0.10)
     #retorna um cod
-    codigo = client.connect_ex(('bancocn.com', porta))
+    codigo = client.connect_ex(('site', porta))
     if codigo == 0:
         print (porta, "-porta aberta")
